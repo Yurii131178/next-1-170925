@@ -21,3 +21,10 @@ export const getNotes = async () => {
   const res = await axios.get<NoteListResponse>('/notes');
   return res.data;
 };
+
+// Інший код файлу
+
+export const getSingleNote = async (id: string) => {
+  const res = await axios.get<Note>(`/notes/${id}`);
+  return res.data;
+};
