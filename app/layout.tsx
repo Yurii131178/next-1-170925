@@ -28,11 +28,6 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
         <main>{children}</main>
-        <footer>
-          <p>
-            Created<time dateTime="2025">2025</time>
-          </p>
-        </footer>
       </body>
     </html>
   );
