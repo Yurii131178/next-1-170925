@@ -36,8 +36,12 @@ type Props = {
 const Error = ({ error, reset }: Props) => {
   return (
     <div>
-      <h2>Помилка при завантаженні</h2>
-      <p>{error.message}</p>
+      <h2 style={{ color: 'red' }}>Помилка при завантаженні</h2>
+      <h3 style={{ backgroundColor: 'red', color: 'yellow' }}>
+        {error.message}
+      </h3>
+      <br />
+      <br />
       <button onClick={reset}>Спробувати знову</button>
     </div>
   );

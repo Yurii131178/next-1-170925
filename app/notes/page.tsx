@@ -113,6 +113,9 @@
 //   return (
 //     <section>
 //       <h1>Notes List</h1>
+//       <br />
+//       <br />
+//       <br />
 //       <button onClick={handleClick}>Get my notes</button>
 //       {notes.length > 0 && <NoteList notes={notes} />}
 //     </section>
@@ -128,6 +131,10 @@
 
 import NoteList from '@/components/NoteList/NoteList';
 import { getNotes } from '@/lib/api';
+
+//ISR
+
+// export const revalidate = 5
 
 const Notes = async () => {
   const response = await getNotes();

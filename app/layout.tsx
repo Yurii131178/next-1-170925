@@ -30,7 +30,7 @@ export default function RootLayout({
           <main>{children}</main>
           <footer>
             <p>
-              Created <time dateTime="2025">2025</time>
+              FOOTER <time dateTime="2025">2025</time>
             </p>
           </footer>
         </TanStackProvider>
