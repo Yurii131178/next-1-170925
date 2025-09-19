@@ -22,6 +22,9 @@ export const getNotes = async () => {
   return res.data;
 };
 
+/**====Запит за нотаткою=====//
+
+Додамо функцію запиту до API: */
 // Інший код файлу
 
 export const getSingleNote = async (id: string) => {
